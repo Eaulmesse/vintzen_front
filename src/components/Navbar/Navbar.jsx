@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BurgerButton from "./BurgerButton";
 import MobileMenu from './MobileMenu';
-
+import DesktopMenu from './DesktopMenu';
 
 function Navbar() {
     const [toggleBurger, setToggleBurger] = useState(false);
@@ -14,12 +14,16 @@ function Navbar() {
         <div className='flex items-center content-wrapper'>
             <div className='w-full relative'>
                 
-                <div className={`sm:hidden transform transition-transform duration-300 absolute w-full ${toggleBurger ? 'translate-y-0' : '-translate-y-full'}`}>
+                <div className={`md:hidden transform transition-transform duration-300 absolute w-full ${toggleBurger ? 'translate-y-0' : '-translate-y-full'}`}>
                     <MobileMenu />
                 </div>
 
-                
-                <div className='sm:hidden'>
+                <div className='md:flex hidden'>
+                    <DesktopMenu />
+                </div>
+
+
+                <div className='md:hidden'>
                     <BurgerButton toggleBurger={toggleBurger} onClick={handleClick} />
                 </div>
 
