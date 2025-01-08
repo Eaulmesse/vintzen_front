@@ -5,15 +5,17 @@ import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar/Navbar'
 import Header from './components/Header/Header'
 import Features from './components/Features/Features'
+import Pricing from './components/Pricing/Pricing'
 
 function App() {
   
 
   return (
     <>
-      <Navbar></Navbar>
-      <Header></Header>
-      <Features></Features>
+      <Navbar/>
+      <Header/>
+      <Features/>
+      <Pricing/>
     </>
   )
 }
