@@ -17,7 +17,7 @@ const Features = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col md:flex-row w-5/6 m-auto'>
+            <div className='w-5/6 w-full flex flex-col md:flex-row md:justify-evenly'>
                 <FeatureCard icon={ <FontAwesomeIcon className='text-3xl text-blue-600 m-auto' icon={faCode}/> } title={"Comptabilité Auto"} description={"Suivez vos finances en temps réel sans effort supplémentaire. Fini les  calculs manuels et les erreurs !"}  />
                 <FeatureCard icon={ <FontAwesomeIcon className='text-3xl text-blue-600' icon={faClock} /> } title={"Comptabilité Auto"} description={"Suivez vos finances en temps réel sans effort supplémentaire. Fini les  calculs manuels et les erreurs !"}  />
                 <FeatureCard icon={ <FontAwesomeIcon className='text-3xl text-blue-600' icon={faUser} /> } title={"Comptabilité Auto"} description={"Suivez vos finances en temps réel sans effort supplémentaire. Fini les  calculs manuels et les erreurs !"}  />
