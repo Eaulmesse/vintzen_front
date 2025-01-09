@@ -7,7 +7,7 @@ const Pricing = () => {
             <h1 className='text-white text-4xl font-bold text-center'>Pricing</h1>
             <p className='text-gray-400 text-center mt-5'>Here you can find our pricing plans.</p>
 
-            <div className='block md:flex w-full'>
+            <div className='block lg:flex w-[80%] m-auto'>
                 <PricingCard title='basic' price='10$' features={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/>
                 <PricingCard title='premium' price='15$' features={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/>
                 <PricingCard title='advanced' price='20$' features={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/>
