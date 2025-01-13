@@ -7,6 +7,7 @@ import Header from './components/Header/Header'
 import Features from './components/Features/Features'
 import Pricing from './components/Pricing/Pricing'
 import Opinions from './components/Opinions/Opinions'
+import News from './components/News/News'
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
       <Features/>
       <Pricing/>
       <Opinions/>
+      <News/>
     </>
   )
 }
