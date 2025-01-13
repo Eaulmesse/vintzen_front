@@ -8,6 +8,7 @@ import Features from './components/Features/Features'
 import Pricing from './components/Pricing/Pricing'
 import Opinions from './components/Opinions/Opinions'
 import News from './components/News/News'
+import Footer from './components/Footer/Footer'
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
       <Pricing/>
       <Opinions/>
       <News/>
+      <Footer/>
     </>
   )
 }
