@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import BurgerButton from "./BurgerButton";
 import MobileMenu from './MobileMenu';
 import DesktopMenu from './DesktopMenu';
-
-import VintzenLogo from '../../assets/images/logo-vintzen_1.png';
+import logoVintzen from '../../assets/images/logo-vintzen.svg';
 
 function Navbar() {
     const [toggleBurger, setToggleBurger] = useState(false);
@@ -29,7 +28,7 @@ function Navbar() {
 
                 <div className={`md:hidden block w-full z-50 bg-white p-5 absolute`}>
                     <BurgerButton toggleBurger={toggleBurger} onClick={handleClick} />
-                    <img src={VintzenLogo} className='m-auto  ' alt="" />
+                    <img src={logoVintzen} className='m-auto w-32' alt="" />
                 </div>
 
             </div>
