@@ -2,7 +2,7 @@ import React from 'react';
 import BlueButton from '../Misc/BlueButton';
 
 
-const PricingCard = ({ title, price, features }) => {
+const PricingCard = ({ title, price, features, link }) => {
     return (
         <div className='bg-white w-4/5 lg:w-[30%] m-auto mt-10 py-5 rounded-lg'>
             <p className='m-auto bg-blue-100 text-blue-600 font-semibold  w-fit py-1 px-4 rounded-full'>{title}</p>
@@ -17,7 +17,8 @@ const PricingCard = ({ title, price, features }) => {
             </p>
 
             <div className='mt-5 w-4/5 m-auto text-center'>
-                <BlueButton text={"Choisir cet abonnement"}/>
+                {/* Changer le href par le lien stripe */}
+                <BlueButton href={link} text={"Choisir cet abonnement"}/>
             </div>
             
         </div>

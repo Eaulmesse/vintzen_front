@@ -8,9 +8,11 @@ const News = () => {
             <p className='text-gray-400 text-center mt-5'>Suivez nos nouveautés & actualités</p>
 
             <div className='block lg:flex w-[80%] m-auto'>
-                <NewsCard title={"Ouverture de la beta"} buttonText={"Rejoindre la bêta"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} />
-                <NewsCard title={"Nouvelle fonctionnalité"} buttonText={"En savoir plus"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} />
-                <NewsCard title={"Nouveau design"} buttonText={"Découvrir"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} />
+
+                {/* Changer le link par le lien vers lequel redigirer */}
+                <NewsCard link={""} title={"Ouverture de la beta"} buttonText={"Rejoindre la bêta"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} />
+                <NewsCard link={""} title={"Nouvelle fonctionnalité"} buttonText={"En savoir plus"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} />
+                <NewsCard link={""} title={"Nouveau design"} buttonText={"Découvrir"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} />
             </div>
         </div>
     );

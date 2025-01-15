@@ -11,8 +11,8 @@ const Header = () => {
                 <p className='mt-5 text-gray-600'>Automatisez vos tâches, gagnez du temps, et boostez vos profits</p>
 
                 <div className='mt-10 flex flex-col md:flex-row md:justify-evenly items-center md:space-x-4'>
-                    <BlueButton text={'Commencez Maintenant !'} /> 
-                    <a className='mt-4 md:mt-0 font-semibold' href="">En savoir plus ! </a>
+                    <BlueButton href={'#prices'} text={'Commencez Maintenant !'} /> 
+                    <a className='mt-4 md:mt-0 font-semibold hover:text-blue-600 hover:text-lg transition-all' href="#features">En savoir plus ! </a>
                 </div>
 
                 
