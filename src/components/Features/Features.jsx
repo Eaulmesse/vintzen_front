@@ -9,7 +9,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Features = () => {
     return (
-        <div className='bg-gray-50 py-10 shadow-inner relative z-50'>
+        <div id='features' className='bg-gray-50 py-10 shadow-inner relative z-50'>
             <div className='md:w-3/6 w-5/6 max-w-xl m-auto readex-pro'>
                 <div className='text-center'>
                     <h2 className='text-4xl text-blue-950 font-bold'>Ce que Vintzen vous offre :</h2>

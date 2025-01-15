@@ -8,11 +8,12 @@ const DesktopMenu = () => {
                 <img src={logoVintzen} className='absolute top-5 left-10 lg:left-24 w-32' alt="" />
                 <div className='mt-5 flex justify-center readex-pro space-x-5 mx-auto'>
 
-                    <a href="#home" className="abril-fatface text-base">Accueil</a>
-                    <a href="#home" className="abril-fatface text-base">Fonctionnalitées</a>
-                    <a href="#home" className="abril-fatface text-base">Tarifs</a>
-                    <a href="#home" className="abril-fatface text-base">Avis</a>
-                    <a href="#home" className="abril-fatface text-base">Contact</a>
+                    <a href="#hero" className="abril-fatface text-base">Accueil</a>
+                    <a href="#features" className="abril-fatface text-base">Fonctionnalitées</a>
+                    <a href="#prices" className="abril-fatface text-base">Tarifs</a>
+                    <a href="#opinions" className="abril-fatface text-base">Avis</a>
+                    <a href="#news" className="abril-fatface text-base">Actualitées</a>
+                    <a href="#footer" className="abril-fatface text-base">Contact</a>
 
                 </div>
             </nav>

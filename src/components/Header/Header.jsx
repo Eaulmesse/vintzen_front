@@ -5,7 +5,7 @@ import Preview from '../../assets/images/preview.png';
 
 const Header = () => {
     return (
-        <header className="text-center readex-pro mt-20">
+        <header id='hero' className="text-center readex-pro mt-20">
             <div className='md:w-3/6 w-5/6 max-w-xl m-auto'>
                 <h1 className='text-4xl font-bold text-blue-950'>L'Outil ultime pour les revendeurs Vinted !</h1>
                 <p className='mt-5 text-gray-600'>Automatisez vos tâches, gagnez du temps, et boostez vos profits</p>

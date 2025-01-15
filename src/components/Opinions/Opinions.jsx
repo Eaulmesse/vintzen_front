@@ -4,7 +4,7 @@ import clientExemple from '../../assets/images/client-exemple.jpg';
 
 const Opinions = () => {
     return (
-        <div className='w-full readex-pro py-10 readex-pro'>
+        <div id='opinions' className='w-full readex-pro py-10 readex-pro'>
             <h1 className='text-4xl font-bold text-center text-blue-950'>Avis de nos utilisateurs</h1>
             <p className='text-gray-400 text-center mt-5 w-[80%] m-auto'>Découvrez comment Vintzen a transformé la manière de vendre pour nos utilisateurs :</p>
 

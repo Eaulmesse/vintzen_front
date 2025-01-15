@@ -3,7 +3,7 @@ import PricingCard from './PricingCard';
 
 const Pricing = () => {
     return (
-        <div className='w-full bg-blue-950 readex-pro py-10'>
+        <div id='prices' className='w-full bg-blue-950 readex-pro py-10'>
             <h1 className='text-white text-4xl font-bold text-center'>Pricing</h1>
             <p className='text-gray-400 text-center mt-5'>Here you can find our pricing plans.</p>
 

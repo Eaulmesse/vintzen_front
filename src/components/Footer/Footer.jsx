@@ -3,7 +3,7 @@ import logoVintzen from '../../assets/images/logo-vintzen.svg';
 
 const Footer = () => {
     return (
-        <footer className="w-full m-auto readex-pro py-10 bg-white flex flex-col lg:flex-row lg:justify-evenly lg:items-center">
+        <footer id='footer' className="w-full m-auto readex-pro py-10 bg-white flex flex-col lg:flex-row lg:justify-evenly lg:items-center">
             <img className="hidden lg:block w-32" src={logoVintzen} alt="Logo Vintzen" />
             
             <div className="w-full lg:w-auto flex flex-col lg:flex-row lg:items-center text-center space-y-3 lg:space-y-0 lg:space-x-4">

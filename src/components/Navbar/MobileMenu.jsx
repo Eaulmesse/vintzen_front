@@ -8,11 +8,12 @@ function MobileMenu() {
                 
                 <div className='flex flex-col items-center justify-center space-y-5 text-white readex-pro'>
                 
-                    <a href="#home" className="abril-fatface text-xl">Accueil</a>
-                    <a href="#home" className="abril-fatface text-xl">Fonctionnalitées</a>
-                    <a href="#home" className="abril-fatface text-xl">Tarifs</a>
-                    <a href="#home" className="abril-fatface text-xl">Avis</a>
-                    <a href="#home" className="abril-fatface text-xl">Contact</a>
+                    <a href="#hero" className="abril-fatface text-base">Accueil</a>
+                    <a href="#features" className="abril-fatface text-base">Fonctionnalitées</a>
+                    <a href="#prices" className="abril-fatface text-base">Tarifs</a>
+                    <a href="#opinions" className="abril-fatface text-base">Avis</a>
+                    <a href="#news" className="abril-fatface text-base">Actualitées</a>
+                    <a href="#footer" className="abril-fatface text-base">Contact</a>
                 </div>
             </nav>
         </>

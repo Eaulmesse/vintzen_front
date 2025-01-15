@@ -3,8 +3,8 @@ import NewsCard from './NewsCard';
 
 const News = () => {
     return (
-        <div className='w-full readex-pro py-10 bg-blue-950'>
-            <h1 className='text-4xl font-bold text-center text-white'>Nos Actualités</h1>
+        <div id="news" className='w-full readex-pro py-10 bg-blue-950'>
+            <h1 className='text-4xl font-bold text-center text-white'>Nos Actualitées</h1>
             <p className='text-gray-400 text-center mt-5'>Suivez nos nouveautés & actualités</p>
 
             <div className='block lg:flex w-[80%] m-auto'>
