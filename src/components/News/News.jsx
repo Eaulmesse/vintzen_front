@@ -1,9 +1,10 @@
 import React from 'react';
 import NewsCard from './NewsCard';
+import { motion } from "motion/react"
 
 const News = () => {
     return (
-        <div id="news" className='w-full readex-pro py-10 bg-blue-950'>
+        <motion.div initial={{ opacity: 0,  }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3, duration: 1 }} viewport={{ once: true }} id="news" className='w-full readex-pro py-10 bg-blue-950'>
             <h1 className='text-4xl font-bold text-center text-white'>Nos Actualitées</h1>
             <p className='text-gray-400 text-center mt-5'>Suivez nos nouveautés & actualités</p>
 
@@ -14,7 +15,7 @@ const News = () => {
                 <NewsCard link={""} title={"Nouvelle fonctionnalité"} buttonText={"En savoir plus"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} />
                 <NewsCard link={""} title={"Nouveau design"} buttonText={"Découvrir"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} />
             </div>
-        </div>
+        </motion.div>
     );
 };
 

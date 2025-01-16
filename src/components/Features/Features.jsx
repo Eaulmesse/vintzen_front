@@ -7,6 +7,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 
+
 const Features = () => {
     return (
         <div id='features' className='bg-gray-50 py-10 shadow-inner relative z-50'>
@@ -18,9 +19,9 @@ const Features = () => {
             </div>
 
             <div className='w-[80%] m-auto flex flex-col lg:flex-row'>
-                <FeatureCard icon={ <FontAwesomeIcon className='text-3xl text-blue-600 m-auto' icon={faCode}/> } title={"Comptabilité Auto"} description={"Suivez vos finances en temps réel sans effort supplémentaire. Fini les  calculs manuels et les erreurs !"}  />
-                <FeatureCard icon={ <FontAwesomeIcon className='text-3xl text-blue-600' icon={faClock} /> } title={"Comptabilité Auto"} description={"Suivez vos finances en temps réel sans effort supplémentaire. Fini les  calculs manuels et les erreurs !"}  />
-                <FeatureCard icon={ <FontAwesomeIcon className='text-3xl text-blue-600' icon={faUser} /> } title={"Comptabilité Auto"} description={"Suivez vos finances en temps réel sans effort supplémentaire. Fini les  calculs manuels et les erreurs !"}  />
+                <FeatureCard animdelay={"0.10"}  icon={ <FontAwesomeIcon className='text-3xl text-blue-600 m-auto' icon={faCode}/> } title={"Comptabilité Auto"} description={"Suivez vos finances en temps réel sans effort supplémentaire. Fini les  calculs manuels et les erreurs !"}  />
+                <FeatureCard animdelay={"0.20"} icon={ <FontAwesomeIcon className='text-3xl text-blue-600' icon={faClock} /> } title={"Comptabilité Auto"} description={"Suivez vos finances en temps réel sans effort supplémentaire. Fini les  calculs manuels et les erreurs !"}  />
+                <FeatureCard animdelay={"0.30"} icon={ <FontAwesomeIcon className='text-3xl text-blue-600' icon={faUser} /> } title={"Comptabilité Auto"} description={"Suivez vos finances en temps réel sans effort supplémentaire. Fini les  calculs manuels et les erreurs !"}  />
             </div>
         </div>
     );

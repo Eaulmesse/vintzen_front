@@ -1,11 +1,11 @@
 import React from 'react';
-
 import logoVintzen from '../../assets/images/logo-vintzen.svg';
+import { motion } from "motion/react"
 
 const DesktopMenu = () => {
     return (
         <nav className="w-full flex">
-                <img src={logoVintzen} className='absolute top-5 left-10 lg:left-24 w-32' alt="" />
+                <motion.img initial={{ opacity: 0}} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 2 }} src={logoVintzen} className='absolute top-5 left-10 lg:left-24 w-32' alt="" />
                 <div className='mt-5 flex justify-center readex-pro space-x-5 mx-auto'>
 
                     <a href="#hero" className="abril-fatface text-base hover:text-blue-600 transition">Accueil</a>

@@ -3,6 +3,9 @@ import BurgerButton from "./BurgerButton";
 import MobileMenu from './MobileMenu';
 import DesktopMenu from './DesktopMenu';
 import logoVintzen from '../../assets/images/logo-vintzen.svg';
+import { motion } from "motion/react"
+
+
 
 function Navbar() {
     const [toggleBurger, setToggleBurger] = useState(false);
@@ -12,11 +15,9 @@ function Navbar() {
     }
 
     return (
-        <div className='flex items-center content-wrapper'>
+        <motion.div initial={{ opacity: 0, translateY: -100 }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.5, duration: 1.25 }} className="flex items-center w-full  z-50">
 
             <div className='w-full relative'>
-
-                
 
                 <div className={`md:hidden transform transition-transform duration-300 absolute w-full ${toggleBurger ? 'translate-y-0' : '-translate-y-full'}`}>
                     <MobileMenu />
@@ -32,7 +33,7 @@ function Navbar() {
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     );
 }
 
