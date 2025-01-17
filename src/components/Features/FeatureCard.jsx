@@ -10,7 +10,7 @@ const FeatureCard = ({ title, description, icon, animdelay, isComingSoon }) => {
             whileInView={{ opacity: 1, scale: 1 }} 
             transition={{ delay: animdelay, duration: 1 }} 
             viewport={{ once: true }} 
-            className={`w-4/5 lg:w-[30%] m-auto lg:space-x-4 mt-10 readex-pro lg:text-left text-center flex flex-col items-center lg:items-start bg-white shadow-lg p-4 rounded-lg 
+            className={`w-4/5 h-64 lg:w-[30%] m-auto lg:space-x-4 mt-10 readex-pro lg:text-left text-center flex flex-col items-center lg:items-start bg-white shadow-lg p-4 rounded-lg 
                 ${isComingSoon ? 'opacity-50 blur-sm hover:blur-none hover:opacity-100 transition-all' : ''}`}
         >
             <motion.div 
@@ -22,6 +22,7 @@ const FeatureCard = ({ title, description, icon, animdelay, isComingSoon }) => {
             >
                 {icon}
             </motion.div>
+
             <motion.div 
                 initial={{ opacity: 0, scale: 0.75 }} 
                 whileInView={{ opacity: 1, scale: 1 }} 
@@ -35,6 +36,7 @@ const FeatureCard = ({ title, description, icon, animdelay, isComingSoon }) => {
                     <p className="text-sm text-orange-500 font-semibold mt-3">À venir 🚀</p>
                 )}
             </motion.div>
+
         </motion.div>
     );
 };
