@@ -15,19 +15,19 @@ function Navbar() {
     }
 
     return (
-        <motion.div initial={{ opacity: 0, translateY: -100 }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.5, duration: 1.25 }} className="flex items-center w-full  z-50">
+        <motion.div initial={{ opacity: 0, translateY: -100 }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.5, duration: 1.25 }} className="flex items-center w-full z-50 lg:h-14 bg-white shadow-sm">
 
             <div className='w-full relative'>
 
-                <div className={`md:hidden transform transition-transform duration-300 absolute w-full ${toggleBurger ? 'translate-y-0' : '-translate-y-full'}`}>
+                <div className={`lg:hidden transform transition-transform duration-300 absolute w-full ${toggleBurger ? 'translate-y-0' : '-translate-y-full'}`}>
                     <MobileMenu />
                 </div>
                 
-                <div className='md:flex hidden'>
+                <div className='lg:flex hidden'>
                     <DesktopMenu />
                 </div>
 
-                <div className={`md:hidden block w-full z-50 bg-white p-5 absolute`}>
+                <div className={`lg:hidden block w-full z-50 bg-white p-5 absolute`}>
                     <BurgerButton toggleBurger={toggleBurger} onClick={handleClick} />
                     <img src={logoVintzen} className='m-auto w-32' alt="" />
                 </div>

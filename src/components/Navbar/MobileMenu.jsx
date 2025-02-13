@@ -4,7 +4,7 @@ import React from 'react';
 function MobileMenu() {
     return (
         <>
-            <nav className="h-96 bg-blue-950 flex items-center justify-center mt-17">
+            <nav className="h-96 bg-custom-purple flex items-center justify-center mt-10 z-10">
                 
                 <div className='flex flex-col items-center justify-center space-y-5 text-white readex-pro'>
                 

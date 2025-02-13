@@ -11,14 +11,14 @@
 #top-burger {
     height: 5px;
     width: 25px;
-    background-color: #001E3F;
+    background-color: #7F72CD;
     border-radius: 5px;
 }
 
 #middle-burger {
     height: 5px;
     width: 30px;
-    background-color: #3366FF;
+    background-color: #8CDA70;
     margin: 4px 0px 4px 0px;
     border-radius: 5px;
 }
@@ -26,6 +26,10 @@
 #bottom-burger {
     height: 5px;
     width: 25px;
-    background-color: #001E3F;
+    background-color: #7F72CD;
     border-radius: 5px;
+}
+
+.bg-primary-color {
+    background-color: #7F72CD;
 }
