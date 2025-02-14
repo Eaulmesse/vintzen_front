@@ -9,7 +9,8 @@ export default {
       colors: {
       'custom-green': '#8CDA70',
       'custom-green-cta': '#6AB850',
-      'custom-purple': '#7F72CD ',
+      'custom-purple': '#7F72CD',
+      'custom-purple-cta': '#D2CDF5'
     },},
   },
   plugins: [],
