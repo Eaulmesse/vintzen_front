@@ -9,11 +9,11 @@ import { ChartArea, BadgeEuro, Bell } from 'lucide-react';
 const Features = () => {
     return (
         <div id='features' className='bg-gray-50 py-10 shadow-inner relative z-50'>
-            <div className='md:w-3/6 w-5/6 max-w-xl m-auto readex-pro'>
-                <div className='text-center'>
-                    <h2 className='text-3xl font-bold'>Ce que <span className='text-custom-purple'>Vintzen</span> vous <span className='text-custom-purple'> offre :</span></h2>
-                    <p className='mt-5 text-gray-600'>Soyez plus rapide, vendez plus.</p>
-                </div>
+            <div className='md:w-3/6 w-5/6 max-w-xl m-auto readex-pro text-center'>
+                
+                <h2 className='text-3xl font-bold'>Ce que <span className='text-custom-purple'>Vintzen</span> vous <span className='text-custom-purple'> offre :</span></h2>
+                <p className='mt-5 text-gray-600'>Soyez plus rapide, vendez plus.</p>
+                
             </div>
 
             <div className='mx-auto mt-5 rounded-lg w-5/6 bg-custom-purple bg-opacity-20 border-2 border-dashed border-custom-purple'>

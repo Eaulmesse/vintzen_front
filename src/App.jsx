@@ -18,8 +18,8 @@ function App() {
       <Navbar/>
       <Header/>
       <Features/>
-      <Pricing/>
       <Opinions/>
+      <Pricing/>
       <News/>
       <Footer/>
     </>
