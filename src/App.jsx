@@ -19,9 +19,9 @@ function App() {
       <Header/>
       <Features/>
       <Opinions/>
-      <Pricing/>
-      <News/>
-      <Footer/>
+      {/* <Pricing/> */}
+      {/* <News/> */}
+      {/* <Footer/> */}
     </>
   )
 }

@@ -8,7 +8,7 @@ import { ChartArea, BadgeEuro, Bell } from 'lucide-react';
 
 const Features = () => {
     return (
-        <div id='features' className='bg-gray-50 py-10 shadow-inner relative z-50'>
+        <div id='features' className='py-10 shadow-[rgba(0,0,5,0.1)_0px_-4px_6px_-1px] relative z-50'>
             <div className='md:w-3/6 w-5/6 max-w-xl m-auto readex-pro text-center'>
                 
                 <h2 className='text-3xl font-bold'>Ce que <span className='text-custom-purple'>Vintzen</span> vous <span className='text-custom-purple'> offre :</span></h2>
@@ -16,7 +16,7 @@ const Features = () => {
                 
             </div>
 
-            <div className='mx-auto mt-5 rounded-lg w-5/6 bg-custom-purple bg-opacity-20 border-2 border-dashed border-custom-purple'>
+            <div className='mx-auto mt-5 rounded-lg w-custom bg-custom-purple bg-opacity-20 border-2 border-dashed border-custom-purple shadow-custom'>
                 
                 <FeatureCard
                     animdelay={"0.10"}

@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'custom': '25px 25px 4px 0 rgba(0, 0, 0, 0.25)',
+      },
+      width: {
+        'custom': '70%',
+        'custom-indiv': '90%'
+      },
       colors: {
       'custom-green': '#8CDA70',
       'custom-green-cta': '#6AB850',

@@ -5,7 +5,7 @@ const FeatureCard = ({ title, description, icon, contentColor, bgColor, content,
     const itemsDelay = animdelay * 3;
 
     return (
-      <div className={`w-4/5  m-auto ${bgColor} ${contentColor} p-5 rounded-lg shadow-md readex-pro my-5 relative overflow-hidden`}>
+      <div className={`w-custom-indiv m-auto ${bgColor} ${contentColor} p-5 rounded-lg shadow-md readex-pro my-5 relative overflow-hidden`}>
         <div className="relative z-30 lg:flex lg:items-center">
           <div className='lg:w-3/5'>
             <p className='text-3xl z-30'>{title}</p>
