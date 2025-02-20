@@ -7,17 +7,18 @@ import DiscordCard from './DiscordCard';
 const Opinions = () => {
     return (
         <div  id='opinions' className='w-custom readex-pro py-10 readex-pro m-auto'>
+
             <h1 className='text-3xl font-bold text-center'><span className='text-custom-purple'>Avis</span> de nos <span className='text-custom-purple'>utilisateurs</span></h1>
             <p className='text-gray-400 text-center mt-5 w-[80%] m-auto'>Découvrez comment Vintzen a transformé la manière de vendre pour nos utilisateurs :</p>
 
-            <div className='space-y-2 md:space-y-0 mt-5 md:flex md:flex-wrap md:h-48 xl:h-40'>
+            <div className='grid grid-cols-1 lg:grid-cols-12 gap-2 mt-5'>
                 
                 <OpinionsCards
                     thumbnail={clientExemple}
                     name={"Jean Dupont"}
                     offerChoosen={"Bêta Tester"}
                     opinion={"Vintzen m'a permis de gagner un temps considérable dans la vente de mes produits. Je recommande vivement"}
-                    width={"w-full lg:w-[66%]"} 
+                    width={"col-span-12 lg:col-span-8"} 
                 />
 
                 <OpinionsCards
@@ -25,7 +26,7 @@ const Opinions = () => {
                     name={"Jean Dupont"}
                     offerChoosen={"Bêta Tester"}
                     opinion={"Vintzen m'a permis de gagner un temps considérable dans la vente de mes produits. Je recommande vivement"}
-                    width={"w-full lg:w-[34%]"} 
+                    width={"col-span-12 lg:col-span-4"} 
                 />
 
                 
@@ -34,7 +35,7 @@ const Opinions = () => {
                     name={"Jean Dupont"}
                     offerChoosen={"Bêta Tester"}
                     opinion={"Vintzen m'a permis de gagner un temps considérable dans la vente de mes produits. Je recommande vivement"}
-                    width={"w-full lg:w-[33%]"} 
+                    width={"col-span-12 lg:col-span-4"} 
                 />
 
                 <OpinionsCards
@@ -42,7 +43,7 @@ const Opinions = () => {
                     name={"Jean Dupont"}
                     offerChoosen={"Bêta Tester"}
                     opinion={"Vintzen m'a permis de gagner un temps considérable dans la vente de mes produits. Je recommande vivement"}
-                    width={"w-full lg:w-[67%]"} 
+                    width={"col-span-12 lg:col-span-8"} 
                 />
                 
                 <OpinionsCards
@@ -50,7 +51,7 @@ const Opinions = () => {
                     name={"Jean Dupont"}
                     offerChoosen={"Bêta Tester"}
                     opinion={"Vintzen m'a permis de gagner un temps considérable dans la vente de mes produits. Je recommande vivement"}
-                    width={"w-full lg:w-[50%]"}
+                    width={"col-span-12 lg:col-span-4"}
                 />
 
                 <DiscordCard
@@ -58,7 +59,7 @@ const Opinions = () => {
                     title={"Rejoignez nous sur discord !"}
                     link={"https://discord.gg/Wdhy2EA3"}
                     text={"Soyez le prochain à nous donner votre avis !"}
-                    width={"w-full lg:w-[50%]"} 
+                    width={"col-span-12 lg:col-span-8"} 
                 />
             </div>
         </div>

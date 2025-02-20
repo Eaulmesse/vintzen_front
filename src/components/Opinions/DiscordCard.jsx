@@ -7,7 +7,7 @@ const DiscordCard = ({ thumbnail, title, link, text, width }) => {
     return (
         <motion.div 
             
-            className={`bg-[#7289da] rounded-2xl readex-pro text-white py-5 ${width} h-full border-4 border-white cursor-pointer relative`}
+            className={`bg-[#7289da] rounded-2xl readex-pro text-white py-5 ${width} h-full cursor-pointer relative shadow-custom`}
             onClick={() => window.open('https://discord.gg/Wdhy2EA3', '_blank')}
         >
             <div className='w-5/6 ml-5 flex space-x-2'>
@@ -18,8 +18,8 @@ const DiscordCard = ({ thumbnail, title, link, text, width }) => {
                 </div>
             </div>
 
-            <div className='flex ml-5 flex h-fit  items-center absolute bottom-2'>
-                <p className='text-lg w-full'>
+            <div className='flex h-fit ml-5 flex self-end  items-center'>
+                <p className='text-lg w-full h-fit'>
                     {text} 
                     
                 </p>
