@@ -2,11 +2,11 @@ import React from 'react';
 import BlueButton from '../Misc/BlueButton';
 import { motion } from "motion/react";
 
-const PricingCard = ({ title, price, features, link }) => {
+const PricingCard = ({ title, price, featuresNames, features, link }) => {
     return (
             
         
-        <div className='bg-white m-auto py-5 rounded-xl w-[80%] shadow-xl'>
+        <div className='bg-white m-auto py-5 rounded-xl w-full  shadow-xl'>
             {/* Title */}
             <p  className='m-auto bg-custom-green bg-opacity-20 text-custom-green font-semibold w-fit py-1 px-4 rounded-full' >
                 {title}
@@ -20,15 +20,25 @@ const PricingCard = ({ title, price, features, link }) => {
             {/* Features */}
             <div className='w-4/5 m-auto mt-5 text-left'>
                 <ul className='space-y-3'>
-                    {features.map((feature, index) => (
+                    {featuresNames.map((featureNames, index) => (
                         <li key={index} className='flex items-center space-x-3 bg-custom-green bg-opacity-20 rounded-lg p-2 shadow'>
                             <span className='min-w-2 h-8 bg-custom-green rounded-full mt-1'></span>
-                            <p className='text-gray-600 font-semibold'>{feature}</p>
+                            <div>
+                                <p className='text-gray-600 font-semibold text-sm md:text-base'>{featureNames} </p>
+                                <p className='text-gray-600 font-regular text-sm'>{features[index]} </p>
+                            </div>
+                            
+                            
                         </li>
                     ))}
                 </ul>
             </div>
 
+            {/* Button */}
+            <div className='w-4/5 m-auto mt-5'>
+                <BlueButton text={"S'inscrire"} link={link} color={"custom-purple"} />
+            </div>
+            
             {/* Call to Action Button */}
             <motion.div  
                 initial={{ opacity: 0, scale: 0.75 }} 
