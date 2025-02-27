@@ -21,6 +21,8 @@ const FaqQuestion = ({ question, answer }) => {
             {isOpen && (
                 <p className='text-sm mt-5'>{answer}</p>
             )}
+
+           
         </div>
     );
 };
