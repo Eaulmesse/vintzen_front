@@ -12,7 +12,7 @@ export default {
       width: {
         'custom': '90%',
         'custom-indiv': '90%',
-         'custom-md': '70%'
+        'custom-md': '70%'
       },
       colors: {
       'custom-green': '#8CDA70',
