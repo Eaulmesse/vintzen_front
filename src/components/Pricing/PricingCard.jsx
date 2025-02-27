@@ -36,7 +36,7 @@ const PricingCard = ({ title, price, featuresNames, features, link }) => {
 
             {/* Button */}
             <div className='w-4/5 m-auto mt-5'>
-                <BlueButton text={"S'inscrire"} link={link} color={"custom-purple"} />
+                <BlueButton text={"S'inscrire"} link={link} variant={"primary"} />
             </div>
             
             {/* Call to Action Button */}

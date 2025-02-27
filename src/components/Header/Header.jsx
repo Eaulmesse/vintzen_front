@@ -14,7 +14,7 @@ const Header = () => {
                 <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.75, duration: 1 }} className='mt-5 text-gray-600'><span className='text-custom-purple'>Automatisez </span>vos tâches, <span className='text-custom-purple'>gagnez</span>  du temps, et <span className='text-custom-purple'>boostez</span> vos profits</motion.p>
 
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.25, duration: 2 }} className='mt-10 flex flex-col md:flex-row md:justify-evenly items-center md:space-x-4'>
-                    <BlueButton href={'#prices'} text={'Commencez Maintenant !'} color={"custom-green"} /> 
+                    <BlueButton href={'#prices'} text={'Commencez Maintenant !'} /> 
                     <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 2 }} className='mt-4 md:mt-0 font-semibold text-custom-purple hover:text-indigo-500 hover:text-lg transition-all' href="#features">En savoir plus ! </motion.a>
                 </motion.div>
 

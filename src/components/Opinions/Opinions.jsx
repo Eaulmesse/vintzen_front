@@ -6,7 +6,7 @@ import DiscordCard from './DiscordCard';
 
 const Opinions = () => {
     return (
-        <div  id='opinions' className='w-custom readex-pro py-10 m-auto'>
+        <div  id='opinions' className='w-custom md:w-custom-md readex-pro py-10 m-auto'>
 
             <h1 className='text-3xl font-bold text-center'><span className='text-custom-purple'>Avis</span> de nos <span className='text-custom-purple'>utilisateurs</span></h1>
             <p className='text-gray-400 text-center mt-5 w-[80%] m-auto'>Découvrez comment Vintzen a transformé la manière de vendre pour nos utilisateurs :</p>

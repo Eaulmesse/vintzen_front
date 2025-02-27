@@ -19,7 +19,7 @@ const Pricing = () => {
 
 
     return (
-        <div className='w-custom readex-pro p-5 md:p-10 m-auto bg-custom-green rounded-xl shadow-custom flex flex-col lg:flex-row gap-2'>
+        <div className='w-custom md:w-custom-md readex-pro p-5 md:p-10 m-auto bg-custom-green rounded-xl shadow-custom flex flex-col lg:flex-row gap-2'>
             <div className='w-full lg:w-1/2 h-full lg:m-auto flex flex-col justify-between'>   
                 <h2 className='text-3xl lg:text-5xl font-bold text-white text-center lg:text-left'>Notre offre <span className='text-custom-purple'>actuelle</span></h2>
 
