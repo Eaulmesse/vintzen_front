@@ -16,7 +16,7 @@ const Features = () => {
                 
             </div>
 
-            <div className='mx-auto mt-5 rounded-lg w-custom md:w-custom-md bg-custom-purple bg-opacity-20 border-2 border-dashed border-custom-purple shadow-custom'>
+            <div className='mx-auto mt-5 rounded-lg w-custom md:w-[50%] bg-custom-purple/20  border-2 border-dashed border-custom-purple/90 shadow-custom'>
                 
                 <FeatureCard
                     animdelay={"0.10"}
@@ -25,7 +25,7 @@ const Features = () => {
                     description={"Suivez vos performances de revente (articles vendus, revenus, etc.) avec des graphiques clairs."}
                     content={PreviewContent}
                     contentAlt={"Statistiques détaillées"}
-                    bgColor={"bg-custom-purple"}
+                    bgColor={"bg-custom-purple/90"}
                     contentColor={"text-white"}
                 />
                 <FeatureCard
@@ -36,7 +36,7 @@ const Features = () => {
                     content={PreviewContent}
                     contentAlt={"Statistiques détaillées"}
                     bgColor={"bg-custom-purple-secondary"}
-                    contentColor={"text-custom-purple"}
+                    contentColor={"text-custom-purple/90"}
                 />
                 <FeatureCard
                     animdelay={"0.10"}
@@ -45,7 +45,7 @@ const Features = () => {
                     description={"Suivez vos performances de revente (articles vendus, revenus, etc.) avec des graphiques clairs."}
                     content={PreviewContent}
                     contentAlt={"Statistiques détaillées"}
-                    bgColor={"bg-custom-purple"}
+                    bgColor={"bg-custom-purple/90"}
                     contentColor={"text-white"}
                 />
    

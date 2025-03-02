@@ -6,7 +6,7 @@ const Faq = ({  }) => {
     
 
     return (
-        <div className='mx-auto mt-10 rounded-lg w-custom md:w-custom-md bg-custom-purple bg-opacity-20 border-2 border-dashed border-custom-purple shadow-custom readex-pro'>
+        <div className='mx-auto mt-10 rounded-lg w-custom md:w-[50%] bg-custom-purple bg-opacity-20 border-2 border-dashed border-custom-purple shadow-custom readex-pro'>
             <h2 className='text-3xl mt-5 font-bold text-custom-purple text-center'>FAQ</h2>
 
             <div className='mt-10'>

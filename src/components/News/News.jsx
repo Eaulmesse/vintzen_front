@@ -31,13 +31,13 @@ const News = () => {
     
 
     return (
-        <div id="news" className='w-custom md:w-custom-md readex-pro py-10 bg-custom-purple m-auto mt-10 rounded-lg shadow-custom'>
+        <div id="news" className='w-custom md:w-[50%] readex-pro py-10 bg-custom-purple/90 m-auto mt-10 rounded-lg shadow-inner'>
             
             <h1 className='text-4xl font-bold text-white text-center'>Nouveautés</h1>
             <p className='text-white/80 text-center'>Découvrez nos dernières fonctionnalités</p>
 
             <div 
-                className="relative h-[300px]  md:h-[280px]"
+                className="relative h-[300px]  "
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >

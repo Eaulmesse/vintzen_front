@@ -6,7 +6,7 @@ const NewsCard = ({ title, description, date, category, link }) => {
         <div className="w-full bg-white p-6 rounded-lg shadow-lg">
 
             <div className="flex items-center gap-2 mb-4">
-                <span className="bg-custom-purple/20 text-custom-purple text-sm px-3 py-1 rounded-full">
+                <span className="bg-custom-green/20 text-custom-green text-sm px-3 py-1 rounded-full">
                     {category}
                 </span>
                 <span className="text-gray-500 text-sm">
