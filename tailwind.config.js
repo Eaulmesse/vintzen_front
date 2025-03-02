@@ -19,7 +19,7 @@ export default {
       'custom-green-cta': '#6AB850',
       'custom-purple': '#7F72CD',
       'custom-purple-secondary': '#c5bee6',
-      'custom-purple-cta': '#5340c7'
+      'custom-purple-cta': '#574e8a'
     },},
   },
   plugins: [],

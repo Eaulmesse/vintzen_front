@@ -1,18 +1,31 @@
 import React from 'react';
-import BlueButton from '../Misc/BlueButton';
-import { motion } from "motion/react"
+import { ArrowRight } from 'lucide-react';
 
-const NewsCard = ({ title, description, buttonText, link }) => {
+const NewsCard = ({ title, description, date, category, link }) => {
     return (
-        <motion.div initial={{ opacity: 0, scale: 0.75 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 1 }} viewport={{ once: true }} className="w-[80%] lg:w-[30%] m-auto mt-10 readex-pro text-center flex flex-col items-center bg-white shadow-lg p-4 rounded-lg">
-            <motion.h3 initial={{ opacity: 0, scale: 0.75 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3, duration: 1 }} viewport={{ once: true }} className='bg-blue-100 text-blue-600 font-bold rounded-full text-center w-full px-1'>{title}</motion.h3>
-            <motion.p initial={{ opacity: 0, scale: 0.75 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ delay: 0.5, duration: 1 }} viewport={{ once: true }} className='text-gray-600 mt-5'>{description}</motion.p>
-            
-            <motion.div initial={{ opacity: 0, translateY: 25 }} whileInView={{ opacity: 1, translateY: 0 }} transition={{ delay: 1, duration: 1 }} viewport={{ once: true }} className='mt-5 w-full'>
-                <BlueButton href={link} text={buttonText}/>
-            </motion.div>
-            
-        </motion.div>
+        <div className="w-full bg-white p-6 rounded-lg shadow-lg">
+
+            <div className="flex items-center gap-2 mb-4">
+                <span className="bg-custom-purple/20 text-custom-purple text-sm px-3 py-1 rounded-full">
+                    {category}
+                </span>
+                <span className="text-gray-500 text-sm">
+                    {date}
+                </span>
+            </div>
+
+            <h3 className="text-xl font-bold mb-2">
+                {title}
+            </h3>
+            <p className="text-gray-600">
+                {description}
+            </p>
+
+            <a href={link} target='_blank' className="mt-4 text-custom-purple hover:underline text-sm flex items-center gap-1">
+                En savoir plus 
+                <ArrowRight className="w-4 h-4" />
+            </a>
+        </div>
     );
 };
 
