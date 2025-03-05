@@ -7,19 +7,27 @@ import DiscordCard from './DiscordCard';
 
 const Opinions = () => {
 
-    const opinions = [
-        {name: "Sophie Martin", offerChoosen: "Bêta Tester", opinion: "Grâce à Vintzen, j'ai pu multiplier mes ventes par 3 en seulement quelques semaines. L'interface est intuitive et les fonctionnalités sont vraiment utiles."},
-        {name: "Thomas Bernard", offerChoosen: "Bêta Tester", opinion: "Je gère mon activité Vinted beaucoup plus efficacement maintenant. Les statistiques m'aident vraiment à optimiser mes ventes."},
-        {name: "Marie Dubois", offerChoosen: "Bêta Tester", opinion: "Un outil indispensable pour tous les vendeurs Vinted ! Le système d'alertes est particulièrement pratique."},
-        {name: "Lucas Petit", offerChoosen: "Bêta Tester", opinion: "La comptabilité automatisée m'a fait gagner des heures de travail. Je peux enfin me concentrer sur l'essentiel."},
-        {name: "Emma Leroy", offerChoosen: "Bêta Tester", opinion: "Excellente application qui répond parfaitement aux besoins des vendeurs. Le support est très réactif."}
+    const opinions1 = [
+        {name: "Sophie Martin", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "Grâce à Vintzen, j'ai pu multiplier mes ventes par 3 en seulement quelques semaines. L'interface est intuitive et les fonctionnalités sont vraiment utiles."},
+        {name: "Thomas Bernard", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "Je gère mon activité Vinted beaucoup plus efficacement maintenant. Les statistiques m'aident vraiment à optimiser mes ventes."},
+        {name: "Marie Dubois", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "Un outil indispensable pour tous les vendeurs Vinted ! Le système d'alertes est particulièrement pratique."},
+        {name: "Lucas Petit", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "La comptabilité automatisée m'a fait gagner des heures de travail. Je peux enfin me concentrer sur l'essentiel."},
+        {name: "Emma Leroy", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "Excellente application qui répond parfaitement aux besoins des vendeurs. Le support est très réactif."}
+    ]
+
+    const opinions2 = [
+        {name: "Julie Moreau", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "Vintzen a révolutionné ma façon de vendre sur Vinted. Les outils de suivi des prix sont particulièrement utiles pour rester compétitif."},
+        {name: "Antoine Durand", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "Depuis que j'utilise Vintzen, la gestion de mon stock est devenue un jeu d'enfant. Je recommande vivement !"},
+        {name: "Claire Rousseau", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "L'automatisation des tâches répétitives m'a permis de doubler mon chiffre d'affaires. Un grand merci à l'équipe Vintzen !"},
+        {name: "Nicolas Lambert", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "Les analyses détaillées de mes ventes m'ont aidé à mieux comprendre ma clientèle. Un outil vraiment professionnel."},
+        {name: "Léa Girard", offerChoosen: "Bêta Tester", thumbnail: clientExemple, opinion: "La fonction de planification des publications est géniale. Je peux enfin organiser mes ventes à l'avance !"}
     ]
 
     return (
         <>
             <h1 className='text-3xl font-bold text-center text-custom-purple'>De nombreux vendeurs soutiennent déjà Vintzen !</h1>
             
-            <div className='my-5 w-custom m-auto bg-custom-purple/15 rounded-lg p-5 shadow-inner overflow-hidden'>
+            <div className='my-5 w-custom m-auto bg-custom-purple/10 rounded-lg p-5 shadow-inner overflow-hidden'>
                 <motion.div 
                     className='flex gap-2'
                     animate={{
@@ -35,13 +43,13 @@ const Opinions = () => {
                         animationPlayState: "paused" 
                     }}
                 >
-                    {[...opinions, ...opinions].map((opinion, index) => (
+                    {[...opinions1, ...opinions1].map((opinions1, index) => (
                         <OpinionsCards
                             key={index}
                             thumbnail={clientExemple}
-                            name={opinion.name}
-                            offerChoosen={opinion.offerChoosen}
-                            opinion={opinion.opinion}
+                            name={opinions1.name}
+                            offerChoosen={opinions1.offerChoosen}
+                            opinion={opinions1.opinion}
                         />
                     ))}
 
@@ -61,13 +69,13 @@ const Opinions = () => {
                     }}
                    
                 >
-                    {[...opinions, ...opinions].map((opinion, index) => (
+                    {[...opinions2, ...opinions2].map((opinions2, index) => (
                         <OpinionsCards
                             key={index}
                             thumbnail={clientExemple}
-                            name={opinion.name}
-                            offerChoosen={opinion.offerChoosen}
-                            opinion={opinion.opinion}
+                            name={opinions2.name}
+                            offerChoosen={opinions2.offerChoosen}
+                            opinion={opinions2.opinion}
                         />
                     ))}
 
