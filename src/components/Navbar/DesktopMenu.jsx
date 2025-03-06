@@ -40,7 +40,7 @@ const DesktopMenu = () => {
                 className="absolute left-10 top-8 lg:left-2 w-32"
             />
 
-            <div className="flex justify-center items-center readex-pro space-x-5 mx-auto bg-custom-purple text-white rounded-lg py-2 px-3 mt-5">
+            <div className="flex justify-center items-center readex-pro space-x-5 mx-auto bg-custom-purple text-white rounded-lg py-2 px-3 mt-5 shadow-custom">
                 {links.map(({ name, href }) => (
                     <motion.a
                         key={name}

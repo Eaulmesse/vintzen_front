@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-        // 'custom': '25px 25px 4px 0 rgba(0, 0, 0, 0.25)',
+        'custom': '15px 15px 4px 0 rgba(0, 0, 0, 0.25)',
       },      
       width: {
         'custom': '90%',
