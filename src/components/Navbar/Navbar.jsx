@@ -18,7 +18,7 @@ function Navbar() {
         <motion.div 
             initial={{ opacity: 0, translateY: -100 }} 
             animate={{ opacity: 1, translateY: 0 }} 
-            transition={{ delay: 0.5, duration: 1.25 }} 
+            transition={{ duration: 0.75 }} 
             className="flex items-center w-full z-50 lg:h-14 fixed top-0 w-fit"
         >
 

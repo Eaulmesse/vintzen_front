@@ -35,7 +35,7 @@ const DesktopMenu = () => {
             <motion.img
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 2 }}
+                transition={{ delay: 0.5, duration: 1 }}
                 src={logoVintzen}
                 className="absolute left-10 top-8 lg:left-2 w-32"
             />
