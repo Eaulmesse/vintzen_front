@@ -9,8 +9,8 @@ const Header = () => {
     
     return (
         <motion.header id='hero' className="text-center readex-pro bg-opacity-10 bg-indigo-400 overflow-hidden">
-            <div className='md:w-3/6 w-5/6 max-w-xl m-auto'>
-                <div className='mt-32 flex items-center justify-center space-x-2'>
+            <div className='w-custom max-w-xl m-auto'>
+                <div className='mt-32 flex flex-col lg:flex-row items-center justify-center space-x-2'>
                     <div className='flex justify-center'>
                         <img className='w-5 h-5 rounded-full' src={clientExemple} alt="" />
                         <img className='w-5 h-5 rounded-full -ml-1' src={clientExemple} alt="" />
@@ -18,7 +18,7 @@ const Header = () => {
                     </div>
                     <p className='text-sm'>Plusieurs communautées supportent déjà notre projet !</p>
                 </div>
-                <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.75, duration: 1 }} className='text-4xl/[50px] font-bold mt-5'><span className='text-custom-purple bg-custom-purple bg-opacity-20 px-3 py-1 border-[3px] border-custom-purple border-dashed rounded-lg'>L'Outil ultime</span> pour les revendeurs <span className='text-custom-purple underline decoration-2'>Vinted !</span></motion.h1>
+                <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.75, duration: 1 }} className='text-5xl/[50px] font-bold mt-5'><span className='text-custom-purple bg-custom-purple bg-opacity-20 px-3 py-1 border-[3px] border-custom-purple border-dashed rounded-lg text-5xl/[80px] '>Le SaaS Ultime</span> pour les vendeurs <span className='text-custom-purple underline decoration-2'>Vinted !</span></motion.h1>
                 <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.75, duration: 1 }} className='mt-5 text-gray-600'><span className='text-custom-purple'>Automatisez </span>vos tâches, <span className='text-custom-purple'>gagnez</span>  du temps, et <span className='text-custom-purple'>boostez</span> vos profits</motion.p>
 
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.25, duration: 2 }} className='mt-10 flex flex-col md:flex-row md:justify-evenly items-center md:space-x-4'>
