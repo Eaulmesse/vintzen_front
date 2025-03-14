@@ -42,20 +42,11 @@ const Pricing = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
         >
-            <motion.div 
-                    className='w-full lg:w-1/3 order-3 flex items-center justify-center lg:justify-start lg:hidden'
-                    variants={itemVariants}
-                >
-                    <h2 className='text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white text-center lg:text-left drop-shadow'>
-                        Notre offre <span className='text-custom-purple'>actuelle</span>
-                    </h2>
-                </motion.div>    
-
-           
+            {/* Structure en 3 rangées pour mobile et en rangée unique pour grand écran */}
             <div className='flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-4 xl:gap-8'>
-                
+                {/* Partie gauche - texte descriptif */}
                 <motion.div 
-                    className='w-full lg:w-1/3 order-2 lg:order-1'
+                    className='w-full lg:w-1/3 order-3 lg:order-2'
                     variants={itemVariants}
                 >
                     <p className='mt-5 text-white text-lg 2xl:text-xl text-center lg:text-right'>
@@ -68,9 +59,9 @@ const Pricing = () => {
                     </p>
                 </motion.div>
 
-                
+                {/* Partie centrale - la carte de prix (toujours centrée) */}
                 <motion.div 
-                    className='w-full lg:w-1/3 order-1 lg:order-2 flex justify-center'
+                    className='w-full lg:w-1/3 order-2  flex justify-center'
                     variants={itemVariants}
                 >
                     <PricingCard 
@@ -82,9 +73,9 @@ const Pricing = () => {
                     />
                 </motion.div>
 
-                
+                {/* Partie droite - titre accrocheur */}
                 <motion.div 
-                    className='w-full lg:w-1/3 order-3 flex items-center justify-center lg:justify-start hidden lg:flex'
+                    className='w-full lg:w-1/3 order-1 lg:order-3 flex items-center justify-center lg:justify-start'
                     variants={itemVariants}
                 >
                     <h2 className='text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white text-center lg:text-left drop-shadow'>
