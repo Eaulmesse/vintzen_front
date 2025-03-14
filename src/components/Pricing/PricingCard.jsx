@@ -6,7 +6,7 @@ const PricingCard = ({ title, price, featuresNames, features, link }) => {
     return (
             
     
-        <div className='w-[90%] md:w-custom-md lg:w-full bg-white m-auto py-5 rounded-[25px] w-full border-2 border-custom-purple shadow-xl my-5'>
+        <div className='w-[90%] md:w-custom-md lg:w-custom max-w-[400px] bg-white m-auto rounded-[25px] w-full border-2 border-custom-purple shadow-xl my-5 py-5'>
             {/* Title */}
             <p  className='m-auto bg-custom-green bg-opacity-20 text-custom-green font-semibold w-fit py-1 px-4 rounded-full' >
                 {title}
