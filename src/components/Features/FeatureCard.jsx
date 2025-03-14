@@ -21,6 +21,7 @@ const FeatureCard = ({ title, description, icon, contentColor, bgColor, content,
           {icon} 
         </div>
         {isComingSoon && <p className="absolute bottom-2 right-2 z-30">Coming Soon</p>}
+        
       </div>
     );
 };
