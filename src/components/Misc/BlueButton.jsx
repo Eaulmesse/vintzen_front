@@ -20,8 +20,6 @@ const BlueButton = ({ text, href, variant = 'default' }) => {
         }
     };
 
-    
-
     const sparklesVariants = {
         
         hover: {
@@ -44,7 +42,7 @@ const BlueButton = ({ text, href, variant = 'default' }) => {
             
             <motion.a 
                 href={href} 
-                className='text-lg' 
+                className='text-md lg:text-lg font-semibold' 
             >
                 {text}
             </motion.a> 
