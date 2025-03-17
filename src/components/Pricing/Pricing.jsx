@@ -78,7 +78,7 @@ const Pricing = () => {
                     className='w-full lg:w-1/3 order-1'
                     variants={itemVariants}
                 >
-                    <h2 className='text-5xl xl:text-6xl 2xl:text-8xl font-bold text-white text-center lg:text-left drop-shadow w-fit '>
+                    <h2 className='text-5xl xl:text-6xl 2xl:text-8xl font-bold text-white text-center drop-shadow xl:text-left'>
                         Notre offre <span className='text-custom-purple'>actuelle</span>
                     </h2>
                 </motion.div>

@@ -1,57 +1,44 @@
 import React from 'react';
 import FeatureCard from './FeatureCard';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartLine, faFileInvoiceDollar, faBell, faRobot, faClock, faBrain } from '@fortawesome/free-solid-svg-icons';
-import PreviewContent from '../../assets/images/preview.png'
 
-import { ChartArea, BadgeEuro, Bell } from 'lucide-react';
+import PreviewContent from '../../assets/images/preview.png';
+import PreviewStats from '../../assets/images/preview-stats.png';
+import PreviewBot from '../../assets/images/preview-bot.png';
+import ArticlePreview from '../../assets/images/article-preview.png';
+import FilterPreview from '../../assets/images/filter-preview.png';
 
 const Features = () => {
-    return (
-        <div id='features' className='py-10 shadow-[rgba(0,0,5,0.1)_0px_-4px_6px_-1px] relative z-50'>
-            <div className='md:w-3/6 w-[5/6] max-w-xl m-auto readex-pro text-center'>
-                
-                <h2 className='text-3xl font-bold'>Ce que <span className='text-custom-purple'>Vintzen</span> vous <span className='text-custom-purple'> offre :</span></h2>
-                <p className='mt-5 text-gray-600'>Soyez plus rapide, vendez plus.</p>
-                
-            </div>
+  const featuresNames = [
+    "Statistiques détaillées :",
+    "Algorithme de recherche d'articles personnalisé et ultra-réactif :",
+    "Comptabilité automatisée :"
+  ];
 
-            <div className='mx-auto mt-5 rounded-lg w-custom md:w-[50%] bg-custom-purple/20  border-2 border-dashed border-custom-purple/90 shadow-custom'>
-                
-                <FeatureCard
-                    animdelay={"0.10"}
-                    icon={<ChartArea size={200} color='#D2CDF5'/> }
-                    title={"Statistiques détaillées"}
-                    description={"Suivez vos performances de revente (articles vendus, revenus, etc.) avec des graphiques clairs."}
-                    content={PreviewContent}
-                    contentAlt={"Statistiques détaillées"}
-                    bgColor={"bg-custom-purple/90"}
-                    contentColor={"text-white"}
-                />
-                <FeatureCard
-                    animdelay={"0.10"}
-                    icon={<BadgeEuro size={200} color='#4F4B67'/> }
-                    title={"Statistiques détaillées"}
-                    description={"Suivez vos performances de revente (articles vendus, revenus, etc.) avec des graphiques clairs."}
-                    content={PreviewContent}
-                    contentAlt={"Statistiques détaillées"}
-                    bgColor={"bg-custom-purple-secondary"}
-                    contentColor={"text-custom-purple/90"}
-                />
-                <FeatureCard
-                    animdelay={"0.10"}
-                    icon={<Bell size={200} color='#D2CDF5'/> }
-                    title={"Statistiques détaillées"}
-                    description={"Suivez vos performances de revente (articles vendus, revenus, etc.) avec des graphiques clairs."}
-                    content={PreviewContent}
-                    contentAlt={"Statistiques détaillées"}
-                    bgColor={"bg-custom-purple/90"}
-                    contentColor={"text-white"}
-                />
-   
-            </div>
-        </div>
-    );
+  const features = [
+    "Suivez vos performances de revente (articles vendus, revenus, etc.) avec des graphiques clairs.",
+    "Soyez le premier à être informé des affaires les plus intéressantes selon vos critères.",
+    "Gagnez du temps et du profit avec la gestion automatique de votre comptabilité."
+  ];
+
+  const previewsArray = [
+    { src: PreviewStats, isSmall: false },
+    { src: FilterPreview, isSmall: true },
+    { src: PreviewContent, isSmall: false }
+  ];
+
+  return (
+    <div>
+      {featuresNames.map((featureName, index) => (
+        <FeatureCard
+          key={index}
+          title={featureName}
+          description={features[index]}
+          preview={previewsArray[index].src}
+          isSmall={previewsArray[index].isSmall}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default Features;
