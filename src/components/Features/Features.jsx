@@ -10,7 +10,7 @@ import FilterPreview from '../../assets/images/filter-preview.png';
 const Features = () => {
   const featuresNames = [
     "Statistiques détaillées :",
-    "Algorithme de recherche d'articles personnalisé et ultra-réactif :",
+    "Bot Vinted 0 délais",
     "Comptabilité automatisée :"
   ];
 
