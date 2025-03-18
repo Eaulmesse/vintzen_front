@@ -6,7 +6,7 @@ const Pricing = () => {
     const freeFeaturesNames = [
         "Statistiques détaillées :",
         "Comptabilité automatisée :",
-        "Alertes personnalisées :"
+        "Bot 0 délais :"
     ];
 
     const freeFeatures = [

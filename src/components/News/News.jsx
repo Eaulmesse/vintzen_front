@@ -31,7 +31,7 @@ const News = () => {
     
 
     return (
-        <div id="news" className='w-custom md:w-[50%] readex-pro py-10 bg-custom-purple/90 m-auto mt-10 rounded-lg shadow-inner'>
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} viewport={{ once: true }} id="news" className='w-custom md:w-[50%] readex-pro py-10 bg-custom-purple/90 m-auto mt-10 rounded-lg shadow-inner'>
             
             <h1 className='text-4xl font-bold text-white text-center'>Nouveautés</h1>
             <p className='text-white/80 text-center'>Découvrez nos dernières fonctionnalités</p>
@@ -74,7 +74,7 @@ const News = () => {
                     />
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 };
 

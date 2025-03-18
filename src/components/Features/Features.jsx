@@ -1,10 +1,9 @@
 import React from 'react';
-import FeatureCard from './FeatureCard';
+import { motion } from 'framer-motion';
 
+import FeatureCard from './FeatureCard';
 import PreviewContent from '../../assets/images/preview.png';
 import PreviewStats from '../../assets/images/preview-stats.png';
-import PreviewBot from '../../assets/images/preview-bot.png';
-import ArticlePreview from '../../assets/images/article-preview.png';
 import FilterPreview from '../../assets/images/filter-preview.png';
 
 const Features = () => {
@@ -31,13 +30,20 @@ const Features = () => {
       <h2 className='text-3xl mt-5 font-bold text-custom-purple text-center'>Découvrez les fonctionnalitées de Vintzen</h2>
 
       {featuresNames.map((featureName, index) => (
-        <FeatureCard
+        <motion.div
           key={index}
-          title={featureName}
-          description={features[index]}
-          preview={previewsArray[index].src}
-          isSmall={previewsArray[index].isSmall}
-        />
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: index * 0.25 }}
+          viewport={{ once: true }}
+        >
+          <FeatureCard
+            title={featureName}
+            description={features[index]}
+            preview={previewsArray[index].src}
+            isSmall={previewsArray[index].isSmall}
+          />
+        </motion.div>
       ))}
     </div>
   );
