@@ -24,7 +24,7 @@ const Opinions = () => {
     ]
 
     return (
-        <>
+        <div className='my-10'>
             <h1 className='text-3xl font-bold text-center text-custom-purple'>De nombreux vendeurs soutiennent déjà Vintzen !</h1>
             
             <div className='my-5 w-custom m-auto bg-custom-purple/10 rounded-lg p-5 shadow-inner overflow-hidden'>
@@ -83,7 +83,7 @@ const Opinions = () => {
                 </motion.div>
             </div>
 
-        </>
+        </div>
 
     )
     // return (

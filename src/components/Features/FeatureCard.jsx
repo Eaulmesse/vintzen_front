@@ -6,7 +6,7 @@ const FeatureCard = ({ title, description, preview, isSmall }) => {
     : 'h-fit w-[700px] xl:w-[750px] 2xl:w-[800px] rounded-xl absolute md:-right-[100px] xl:-right-[150px] top-0 md:top-1/2 md:transform md:-translate-y-1/2 -rotate-[0.1rad]';
 
   return (
-    <div className="w-custom xl:w-custom-md  m-auto h-fit p-5 my-5 rounded-lg shadow-2xl readex-pro relative flex flex-col md:flex-row bg-custom-purple/80 text-white overflow-hidden">
+    <div className="w-custom xl:w-custom-md  m-auto h-fit p-5 my-5 rounded-lg shadow-xl readex-pro relative flex flex-col md:flex-row bg-custom-purple/80 text-white overflow-hidden">
       <div className="w-full md:w-1/3 space-y-5 flex flex-col justify-center items-center md:items-start">
         <p className='text-3xl z-30'>{title}</p>
         <p className='text-sm z-30'>{description}</p>

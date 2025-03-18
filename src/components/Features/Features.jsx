@@ -27,7 +27,9 @@ const Features = () => {
   ];
 
   return (
-    <div>
+    <div className='my-10'>
+      <h2 className='text-3xl mt-5 font-bold text-custom-purple text-center'>Découvrez les fonctionnalitées de Vintzen</h2>
+
       {featuresNames.map((featureName, index) => (
         <FeatureCard
           key={index}
