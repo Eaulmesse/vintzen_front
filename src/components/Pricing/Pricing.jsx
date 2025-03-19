@@ -41,6 +41,7 @@ const Pricing = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
+            id='prices'
         >
             {/* Structure en 3 rangées pour mobile et en rangée unique pour grand écran */}
             <div className='flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-4 xl:gap-8'>
@@ -69,7 +70,7 @@ const Pricing = () => {
                         price={"Gratuit"} 
                         featuresNames={freeFeaturesNames} 
                         features={freeFeatures} 
-                        link={"#"} 
+                        link={"https://dashboard.vintzen.fr/inscription"} 
                     />
                 </motion.div>
 

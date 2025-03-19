@@ -42,6 +42,7 @@ const BlueButton = ({ text, href, variant = 'default' }) => {
             
             <motion.a 
                 href={href} 
+                target='_blank'
                 className='text-md lg:text-lg font-semibold' 
             >
                 {text}

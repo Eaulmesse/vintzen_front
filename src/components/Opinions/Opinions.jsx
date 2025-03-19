@@ -24,7 +24,7 @@ const Opinions = () => {
     ]
 
     return (
-        <div className='my-10'>
+        <div id='opinions' className='my-10'>
             <motion.h1 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} viewport={{ once: true }} className='text-3xl font-bold text-center text-custom-purple'>De nombreux vendeurs soutiennent déjà Vintzen !</motion.h1>
             
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} viewport={{ once: true }} className='my-5 w-custom m-auto bg-custom-purple/10 rounded-lg p-5 shadow-inner overflow-hidden'>

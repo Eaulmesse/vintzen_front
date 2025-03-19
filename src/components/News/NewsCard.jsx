@@ -21,10 +21,12 @@ const NewsCard = ({ title, description, date, category, link }) => {
                 {description}
             </p>
 
-            <a href={link} target='_blank' className="mt-4 text-custom-purple hover:underline text-sm flex items-center gap-1">
+
+            {link && <a href={link} target='_blank' className="mt-4 text-custom-purple hover:underline text-sm flex items-center gap-1">
                 En savoir plus 
                 <ArrowRight className="w-4 h-4" />
-            </a>
+            </a>}
+            
         </div>
     );
 };

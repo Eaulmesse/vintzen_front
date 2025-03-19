@@ -7,9 +7,8 @@ const News = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [autoPlay, setAutoPlay] = useState(true); 
     const news = [
-        { title: "Ouverture de la beta", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.", date: "12 Mars 2025", category: "Nouveau", link: "https://www.google.com" },
-        { title: "Autre news", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.", date: "10 Février 2025", category: "Bêta", link: "https://www.google.com"    },
-        { title: "Troisième news", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.", date: "21 Janvier 2024", category: "Information", link: "https://www.google.com" },
+        { title: "Ouverture de la beta", description: "Notre outil est en bêta gratuite ! Testez ses fonctionnalités (gestion des stocks, comptabilité, bot de scraping) sans frais et aidez-nous à l’améliorer avec vos retours avant le lancement officiel. Profitez-en dès maintenant !", date: "19 Mars 2025", category: "Bêta",  },
+        { title: "Développement du bot 0 délais", description: "Le bot 0 délai est actuellement en cours de développement. Conçu pour scraper Vinted selon vos filtres et repérer les articles les plus intéressants ultra-rapidement, il sera bientôt disponible pour booster vos performances. Restez à l’affût !", date: "10 Mars 2025", category: "Développement"},
         
     ];
 
